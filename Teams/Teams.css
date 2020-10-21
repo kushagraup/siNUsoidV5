@@ -1,0 +1,727 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* ----------------------------------------------------------- particles.js ------------------------------------------------------ */
+
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-image:linear-gradient(#1D152D,#1D152D) ;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+/*----------------------------------------------------Text--------------------------------------------------------------------------*/
+
+.center {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: left;
+}
+
+@font-face{
+  font-family: 'Quantum';
+  src: url(Quantum.otf);
+  font-style: normal;
+
+
+}
+h1 {
+  text-align: center;
+  font-family: 'Quantum';
+  font-size: 100px;
+  color: white;
+  margin-left: 10%;
+  padding: 0px 0px 75px 0px;
+}
+
+.word-wrapper {
+  position: relative;
+  left: -100px;
+}
+
+.word-wrapper b {
+  position: absolute;
+  left: 0;
+  color:whitesmoke;
+
+}
+
+.word-wrapper b.visible {
+  position: relative;
+}
+
+.word-wrapper b i:nth-of-type(2){
+  animation-delay: .05s;
+}
+
+.word-wrapper b i:nth-of-type(3){
+  animation-delay: .1s;
+}
+
+.word-wrapper b i:nth-of-type(4){
+  animation-delay: .15s;
+}
+
+.word-wrapper i:nth-of-type(5){
+  animation-delay: .2s;
+}
+
+.word-wrapper b i:nth-of-type(6){
+  animation-delay: .25s;
+}
+
+.word-wrapper b i:nth-of-type(7){
+  animation-delay: .3s;
+}
+
+.word-wrapper b i:nth-of-type(8){
+  animation-delay: .35s;
+}
+
+.word-wrapper b i:nth-of-type(9){
+  animation-delay: .4s;
+}
+
+.word-wrapper b i:nth-of-type(10){
+  animation-delay: .45s;
+}
+
+.word-wrapper b i:nth-of-type(11){
+  animation-delay: .5s;
+}
+
+.word-wrapper b i:nth-of-type(12){
+  animation-delay: .55s;
+}
+
+.word-wrapper b i:nth-of-type(13){
+  animation-delay: .6s;
+}
+
+
+.word-wrapper i {
+  font-style: normal;
+  opacity: 0;
+  transform: scale(0);
+  animation-duration: .6s;
+  animation-fill-mode: backwards;
+}
+
+.word-wrapper .visible i {
+  opacity: 1;
+  transform: scale(1);
+  animation-name: scale-up;
+}
+
+.word-wrapper .hidden i {
+  animation-name: scale-down;
+}
+
+/* This animates individual letters of word */
+@keyframes scale-up {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  
+  60% {
+    transform: scale(1.2); /* this creates bounce effect */
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*----------------------------------------------------Images----------------------------------------------------------------------------*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Corecontainer {
+  width: 85vw;
+  margin: 1rem auto;
+}
+.Leadscontainer {
+  width: 85vw;
+  margin: 1rem auto;
+}
+
+img,
+.overlay {
+  transition: .3s all;
+  border-radius: 3px;
+}
+
+.bg{
+  float : left;
+  height: 520px;
+  width: 210px;
+  max-width: 30%;
+}
+
+.bg img {
+  height: 520px;
+  width: 210px;
+  margin-bottom: -4px;
+}
+
+.bg .overlay {
+  position : relative;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  opacity: 0;
+  top:-4em;
+}
+.bg .overlay h2 {
+  font-family: 'Droid Serif', serif;
+}
+.bg .overlay p {
+  font-family: 'Julius Sans One', sans-serif;
+}
+.bg:hover .overlay {
+  opacity: 1;
+}
+.bg:hover img {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  opacity : .5;
+}
+
+@media screen and (max-width: 1148px) {
+  .bg {
+    max-width: 48%;
+    margin: 1%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bg {
+    float: none;
+    max-width: 80%;
+    margin: 1% auto;
+  }
+}
+/*--------------------------------------------Names------------------------------------------------------------------------------*/
+.Names{
+  font-family: 'Odibee Sans', cursive;
+  font-size: 50px;
+  color: white;
+}
+.Titles{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px;
+  color:#f20071;
+  text-shadow: 1px 1px 1px #fff;
+}
+.Intro{
+  float: left;
+}
+/*--------------------------------------------Positions------------------------------------------------------------------------------*/
+#Likhith{
+  position: relative;
+  top : 125px;
+  left : 100px;
+}
+#Sajja{
+  position: relative;
+  top : 450px;
+  left : 30px;
+}
+
+#LS{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Prerana{
+  position: relative;
+  top : 200px;
+  left : 60px;
+}
+#Bhasien{
+  position: relative;
+  top : 530px;
+  left : -10px;
+}
+#PB{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Shrihari{
+  position: relative;
+  top : 30px;
+  left : -50px;
+}
+#Shukla{
+  position: relative;
+  top : -160px;
+  left : 1030px;
+}
+#SS{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Maddhav{
+  position: relative;
+  top : 320px;
+  left : 0px;
+}
+#Grandy{
+  position: relative;
+  top : 650px;
+  left : -390px;
+}
+
+#GM{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Charitha{
+  position: relative;
+  top : 400px;
+  left : -60px;
+}
+#Madala{
+  position: relative;
+  top : 720px;
+  left : -430px;
+}
+#CM{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+#Mayank{
+  position: relative;
+  top : 150px;
+  left : 120px;
+}
+#Gubba{
+  position: relative;
+  top : -40px;
+  left : 860px;
+}
+#MG{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Aditya{
+  position: relative;
+  top : 430px;
+  left : -115px;
+}
+#Joshi{
+  position: relative;
+  top : 770px;
+  left : -180px;
+}
+
+#AJ{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+#Kushu{
+  position: relative;
+  top : 1200px;
+  left : -375px;
+}
+#Mishra{
+  position: relative;
+  top : 1550px;
+  left : -770px;
+}
+
+#KM{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+#Ananya{
+  position: relative;
+  top : 1280px;
+  left : -440px;
+}
+#Khare{
+  position: relative;
+  top : 1100px;
+  left : 600px;
+}
+#AK{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Yash{
+  position: relative;
+  top : 600px;
+  left : 810px;
+}
+#Nehra{
+  position: relative;
+  top : 950px;
+  left : 500px;
+}
+#YN{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Kerav {
+  position: relative;
+  top : 1400px;
+  left : -480px;
+}
+
+#Nahar{
+  position: relative;
+  top : 1730px;
+  left : -550px;
+}
+
+#KN {
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Deepak{
+  position: relative;
+  top : 1500px;
+  left : -480px;
+}
+#Chauhan{
+  position: relative;
+  top : 1320px;
+  left : 740px;
+}
+
+#DC{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Prab{
+  position: relative;
+  top : 800px;
+  left : 775px;
+}
+#Singh{
+  position: relative;
+  top : 1150px;
+  left : 700px;
+}
+
+#PS{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Adarsh{
+  position: relative;
+  top : 1600px;
+  left : -355px;
+}
+#Kumar{
+  position: relative;
+  top : 1930px;
+  left : -700px;
+}
+
+#AK2{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Neelanjan{
+  position: relative;
+  top : 1700px;
+  left : -375px;
+}
+#Mahato{
+  position: relative;
+  top : 1510px;
+  left : 600px;
+}
+
+#NM{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Staveta{
+  position: relative;
+  top : 1000px;
+  left : 890px;
+}
+#Parashar{
+  position: relative;
+  top : 1350px;
+  left : 530px;
+}
+
+#SP{
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+
+#Archa {
+  position: relative;
+  top : 1800px;
+  left : -480px;
+}
+
+#Dave{
+  position: relative;
+  top : 2130px;
+  left : -550px;
+}
+
+#AD {
+  position: relative;
+  top : -300px;
+  left : 0px;
+}
+/*------------------------------------------------------------Volunteers--------------------------------------------------*/
+nav.primary-navigation {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Odibee Sans', cursive;
+}
+nav.primary-navigation ul li {
+  list-style: none;
+  margin: 0 auto;
+  border-left: 2px solid #3ca0e7;
+  display: inline-block;
+  padding: 0 30px;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Odibee Sans', cursive;
+}
+nav.primary-navigation li a {
+  color: rgb(255, 255, 255);
+}
+
+nav.primary-navigation li:hover {
+  cursor: pointer;
+}
+nav.primary-navigation ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  display: none;
+  background:#1D152D;
+}
+nav.primary-navigation ul li:hover > ul,
+nav.primary-navigation ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px#1D152D;
+}
+nav.primary-navigation ul li ul li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #3CA0E7;
+}
+
+
+
+#Volunteers {
+  position: absolute;
+  top: 5500px;
+  left:400px;
+  padding: 40px 1px 1000px;
+  margin: auto;
+  width: 50%;
+}
+/*-------------------------------------------------------Subheads-------------------------------------------------------------------------------------------------*/
+.Subheads {
+  color:#1ce6e6;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 9em;
+}
+
+#Core {
+  position: relative;
+  left: 650px;
+}
+
+#Core {
+  border-right: solid 3px rgba(9, 238, 226, 0.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Odibee Sans', cursive;
+  font-size: 60px;
+  color:rgba(9, 238, 226, 0.75);
+}
+
+/* Animation */
+#Core {
+  animation: animated-text 4s steps(8,end) 1s 1 normal both,
+             animated-cursor 600ms steps(8,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 170px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color:rgba(9, 238, 226, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+#Leads {
+  position: absolute;
+  top: 2400px;
+  left: 650px;
+  border-right: solid 3px rgba(9, 238, 226, 0.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Odibee Sans', cursive;
+  font-size: 60px;
+  color: rgba(9, 238, 226,0.75);
+}
+
+/* Animation */
+#Leads {
+  animation: animated-text2 4s steps(10,end) 1s 1 normal both,
+             animated-cursor2 600ms steps(10,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 220px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor2{
+  from{border-right-color: rgba(9, 238, 226, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+
+#Volun {
+  position: absolute;
+  left:650px;
+  top : 5450px;
+  border-right: solid 3px rgba(9, 238, 226, 0.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Odibee Sans', cursive; 
+  font-size: 60px;
+  color:rgba(9, 238, 226, 0.75);
+}
+
+/* Animation */
+#Volun {
+  animation: animated-text3 4s steps(10,end) 1s 1 normal both,
+             animated-cursor3 600ms steps(10,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text3{
+  from{width: 0;}
+  to{width: 195px;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor3{
+  from{border-right-color:rgba(9, 238, 226, 0.75);}
+  to{border-right-color: transparent;}
+}
