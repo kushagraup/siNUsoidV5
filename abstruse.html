@@ -266,7 +266,7 @@
                         <h3 class="nk-decorated-h-2"><span><span class="text-main-1">Register</span> for this event</span></h3>
                         <div class="nk-gap"></div>
                         <div class="nk-reply">
-                            <form method="post" autocomplete="off" name="google-sheet" action="#" class="nk-form" novalidate="novalidate">
+                            <form method="post" autocomplete="off" name="google-sheet" class="nk-form">
                                 <div class="row sm-gap vertical-gap">
                                     <div class="col-md-4 form-group">
                                         <input type="text" class="form-control required" name="name" placeholder="Name *">
@@ -289,8 +289,25 @@
                                 <div class="nk-gap-1"></div>
                                 <div class="nk-form-response-success"></div>
                                 <div class="nk-form-response-error"></div>
-                                <button class="nk-btn nk-btn-rounded nk-btn-color-main-1">Submit</button>
+                                <div class="form-group">
+                                    <input type="submit" name="submit" class="btnSubmit btn-block nk-btn nk-btn-rounded nk-btn-color-main-1" value="Login" />
+                                </div>
                             </form>
+                            <script>
+                                const scriptURL = 'https://script.google.com/macros/s/AKfycbz7YcRvlL7sxOQhk8WUUnPohrUNHuFbyu3gJx3zg5HuZYaAPHiI_mtpwbOdlX_QgYzGwg/exec'
+                                const form = document.forms['google-sheet']
+                              
+                                form.addEventListener('submit', e => {
+                                  e.preventDefault()
+                                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                    .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                                    .catch(error => console.error('Error!', error.message))
+                                })
+                              </script>
+                    
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
                         </div>
                         <!-- END: Register -->
                     </div>
