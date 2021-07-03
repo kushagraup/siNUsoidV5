@@ -238,19 +238,22 @@
                     <form method="post" autocomplete="off" name="Events-Registration" class="nk-form">
                         <div class="row sm-gap vertical-gap">
                             <div class="col-md-4 form-group">
-                                <input type="text" class="form-control required" name="name" placeholder="Name *">
+                                <input type="text" class="form-control required" name="name" placeholder="Name *" required="">
                             </div>
                             <div class="col-md-4 form-group">
-                                <input type="tel" class="form-control required" name="phone" placeholder="Phone No. *" pattern="[0-9]{10}">
+                                <input type="text" maxlength="10" pattern="[6-9][0-9]{9}" class="form-control required" name="phone" placeholder="Phone No. *" pattern="[0-9]{10}" required="">
                             </div>
                             <div class="col-md-4 form-group">
                                 <input type="text" class="form-control" name="discord" placeholder="Discord ID">
                             </div>
-                            <div class="col-md-6 form-group">
-                                <input type="email" class="form-control required" name="email" placeholder="Email *">
+                            <div class="col-md-4 form-group">
+                                <input type="email" class="form-control required" name="email" placeholder="Email *" required="">
                             </div>
-                            <div class="col-md-6 form-group">
-                                <input type="text" class="form-control required" name="university" placeholder="University *">
+                            <div class="col-md-4 form-group">
+                                <input type="text" class="form-control required" name="university" placeholder="University *" required="">
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="text" class="form-control required" name="referral" placeholder="Fest Ambassador Referral Code *" required="">
                             </div>
                             <div class="col-md-4 form-group">
                                 <input type="checkbox" name="ctf" id="ctf">
@@ -595,7 +598,7 @@
         <script src="assets/plugins/nk-share/nk-share.js"></script>
         
         <!-- GoodGames -->
-        <script src="assets/js/goodgames.min.js"></script>
+        <!-- <script src="assets/js/goodgames.min.js"></script> -->
         <script src="assets/js/goodgames-init.js"></script>
         <!-- END: Scripts -->
         
