@@ -1,2 +1,7 @@
-
-input::-webkit-outer-spin-button{display:none;}input::-webkit-outer-spin-button{-webkit-appearance:none;}input::-webkit-outer-spin-button{margin-left:0;}input::-webkit-outer-spin-button{margin-bottom:0;}input::-webkit-outer-spin-button{margin-right:0;}input::-webkit-outer-spin-button{margin-top:0;}input::-webkit-inner-spin-button{display:none;}input::-webkit-inner-spin-button{-webkit-appearance:none;}input::-webkit-inner-spin-button{margin-left:0;}input::-webkit-inner-spin-button{margin-bottom:0;}input::-webkit-inner-spin-button{margin-right:0;}input::-webkit-inner-spin-button{margin-top:0;}
+/* PLACE YOU CUSTOM STYLES IN THIS FILE */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
