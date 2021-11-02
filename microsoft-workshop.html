@@ -230,47 +230,15 @@
                         <h3 class="sinuv-decorated-h-2"><span><span class="text-main-1">Register</span> for this event</span></h3>
                         <div class="sinuv-gap"></div>
                         <div class="sinuv-reply">
-                            <form method="post" autocomplete="off" name="Abstruse" class="sinuv-form">
-                                <div class="row sm-gap vertical-gap">
-                                    <div class="col-md-6 form-group">
-                                        <input type="text" class="form-control required" name="name" placeholder="Name *" required="">
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input type="number" maxlength="10" pattern="[6-9][0-9]{9}" class="form-control required" name="phone" placeholder="Phone No. *" required="">
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input type="email" class="form-control required" name="email" placeholder="Email *" required="">
-                                    </div>
-                                    <div class="col-md-6 form-group">
-                                        <input type="text" class="form-control" name="discord" placeholder="Discord ID">
-                                    </div>
-                                    <div class="col-md-2 form-group">
-                                        <input type="submit" name="submit" class="btnSubmit btn-block sinuv-btn sinuv-btn-rounded sinuv-btn-color-main-1" value="Submit" />
+                            <div class="col-lg-4">
+                                <div class="sinuv-feature-1">
+                                    <div class="sinuv-feature-cont">
+                                        <h3 class="sinuv-feature-title"><a href="valorant-registration.html">Workshop</a></h3>
+                                        <h3 class="sinuv-feature-title text-main-1"><a href="closed.html">Registrations Closed</a></h3>
                                     </div>
                                 </div>
-                            </form>
-                                <div class="sinuv-gap-1"></div>
-                                <!-- <textarea class="form-control required" name="message" rows="5" placeholder="Message *" aria-required="true"></textarea> -->
-                                <div class="sinuv-gap-1"></div>
-                                <div class="sinuv-form-response-success"></div>
-                                <div class="sinuv-form-response-error"></div>
-                                <!-- <div class="form-group">
-                                    <input type="submit" name="submit" class="col-md-1 btnSubmit btn-block sinuv-btn sinuv-btn-rounded sinuv-btn-color-main-1" value="Submit" />
-                                </div> -->
-                            <script>
-                                const scriptURL = 'https://script.google.com/macros/s/AKfycbym4v0taW1WFLjn40BhkJ6Bbb6kSMyaQb_8etoP74iScia_uvm1KKQbA8Ra5h8o6sB2/exec'
-                                const form = document.forms['Abstruse']
-                              
-                                form.addEventListener('submit', e => {
-                                  e.preventDefault()
-                                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                                    .then(response => window.location.href = "success.html")
-                                    .catch(error => console.error('Error!', error.message))
-                                })
-                              </script>
-                    
-                            <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-                            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+                            </div>
+                           
 
                         </div>
                         <!-- END: Register -->
