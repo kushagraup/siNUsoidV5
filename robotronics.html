@@ -240,20 +240,29 @@
                         <div class="sinuv-reply">
                             <form method="post" autocomplete="off" name="Workshop" class="sinuv-form">
                                 <div class="row sm-gap vertical-gap">
-                                    <div class="col-md-4 form-group">
+                                    <div class="col-md-6 form-group">
                                         <input type="text" class="form-control required" name="name" placeholder="Name *" required="">
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <input type="text" class="form-control required" name="enrollment" placeholder="Enrollment Number *" required="">
-                                    </div>
-                                    <div class="col-md-4 form-group">
-                                        <input type="text" class="form-control" name="discord" placeholder="Discord ID">
                                     </div>
                                     <div class="col-md-6 form-group">
                                         <input type="number" maxlength="10" pattern="[6-9][0-9]{9}" class="form-control required" name="phone" placeholder="Phone No. *" required="">
                                     </div>
                                     <div class="col-md-6 form-group">
                                         <input type="email" class="form-control required" name="email" placeholder="Email *" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" class="form-control required" required="" name="team" placeholder="Team Name *">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" class="form-control required" name="m2_name" placeholder="Member 2 - Name *" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="email" class="form-control required" name="m2_email" placeholder="Member 2 - Email *" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="text" class="form-control required" name="m3_name" placeholder="Member 3 - Name *" required="">
+                                    </div>
+                                    <div class="col-md-6 form-group">
+                                        <input type="email" class="form-control required" name="m3_email" placeholder="Member 3 - Email *" required="">
                                     </div>
                                     <div class="col-md-2 form-group">
                                         <!-- <input type="submit" name="submit" class="btnSubmit btn-block  style-btn  style-btn-rounded  style-btn-color-main-1" value="Submit" /> -->
@@ -275,7 +284,7 @@
                                 <input type="submit" name="submit" class="col-md-1 btnSubmit btn-block sinuv-btn sinuv-btn-rounded sinuv-btn-color-main-1" value="Submit" />
                             </div> -->
                             <script>
-                                const scriptURL = 'https://script.google.com/macros/s/AKfycby8mwBaxpIWVJxMEreZTC9A0-ctAsoPPH6bdjXoO4qM9dZ2j97q8t5N7LlVrPEBDCWO/exec'
+                                const scriptURL = 'https://script.google.com/macros/s/AKfycbzZcvBWXHaLJfSnvsuAgZPFZCR_utTck-QhvKgtNNzlxA1YgFSJqN1eRP8TefRaYjul/exec'
                                 const form = document.forms['Workshop']
                                 
                                 form.addEventListener('submit', e => {
